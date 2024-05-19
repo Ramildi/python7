@@ -1,0 +1,11 @@
+import random
+import math
+
+def kvadrat():
+    reqemler = [random.randint(20, 50) for _ in range(5)]
+    print("Cavab", reqemler)
+    
+    kvadrataQaldirma = [math.pow(reqem, 2) for reqem in reqemler if reqem % 2 == 0]
+    print("Kvadratlari", kvadrataQaldirma)
+
+kvadrat()
